@@ -1,10 +1,30 @@
 require "tzinfo"
 
-puts "Hello, Welcome to Time Zone Converter!"
 
+for i in "Hello, Welcome to Time Zone Converter!".chars.to_a
+  print i
+  sleep 0.05
+end
 
-puts "What is your name?"
+sleep(2)
+
+puts "\n"
+
+for i in "What is your name?".chars.to_a
+    print i
+    sleep 0.05
+end
+
+puts "\n"
 
 name = gets.chomp
 
-puts "Nice to meet you, #{name}!"
+sleep(3)
+
+
+for i in "Nice to meet you, #{name}!".chars.to_a
+    print i
+    sleep 0.05
+end
+
+sleep(3)
