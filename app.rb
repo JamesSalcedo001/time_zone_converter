@@ -96,41 +96,72 @@ time = Time.new
 
 current_time_zone = Time.now.zone
 
-time_zone_user = {
-    name: nil,
-    time_zone: nil,
-    availability: {
-        monday: {
-            time_slot_1: [] || "n/a"
+time_zone_users = {
+        time_zone_user1: {
+            name: nil,
+            time_zone: nil,
+            availability: {
+                monday: {
+                    time_slot_1: [] || "n/a"
+                },
+                tuesday: {
+                    time_slot_1: [] || "n/a"
+                },
+                wednesday: {
+                    time_slot_1: [] || "n/a"
+                },
+                thursday: {
+                    time_slot_1: [] || "n/a"
+                },
+                friday: {
+                    time_slot_1: [] || "n/a"
+                },
+                saturday: {
+                    time_slot_1: [] || "n/a"
+                },
+                sunday: {
+                    time_slot_1: [] || "n/a"
+                }
+            }
         },
-        tuesday: {
-            time_slot_1: [] || "n/a"
-        },
-        wednesday: {
-            time_slot_1: [] || "n/a"
-        },
-        thursday: {
-            time_slot_1: [] || "n/a"
-        },
-        friday: {
-            time_slot_1: [] || "n/a"
-        },
-        saturday: {
-            time_slot_1: [] || "n/a"
-        },
-        sunday: {
-            time_slot_1: [] || "n/a"
+        time_zone_user2: {
+            name: nil,
+            time_zone: nil,
+            availability: {
+                monday: {
+                    time_slot_1: [] || "n/a"
+                },
+                tuesday: {
+                    time_slot_1: [] || "n/a"
+                },
+                wednesday: {
+                    time_slot_1: [] || "n/a"
+                },
+                thursday: {
+                    time_slot_1: [] || "n/a"
+                },
+                friday: {
+                    time_slot_1: [] || "n/a"
+                },
+                saturday: {
+                    time_slot_1: [] || "n/a"
+                },
+                sunday: {
+                    time_slot_1: [] || "n/a"
+                }
+            }
         }
-    }
 }
 
 answer = 1, 2
+# answer = "n/a"
+time_zone_users[:time_zone_user1][:time_zone] = current_time_zone
+# time_zone_users[:time_zone_user1][:name] = gets.chomp
+time_zone_users[:time_zone_user1][:availability][:monday][:time_slot_1] = answer
 
-time_zone_user[:time_zone] = current_time_zone
-# time_zone_user[:name] = gets.chomp
-time_zone_user[:availability][:monday][:time_slot_1] = answer
-
-puts time_zone_user
+puts time_zone_users[:time_zone_user1]
+puts "\n"
+puts time_zone_users[:time_zone_user2]
 
 
 
