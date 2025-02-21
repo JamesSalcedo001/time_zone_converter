@@ -188,9 +188,9 @@ puts "\n"
 
 # Plan out app
 
-# on start of program, greets and prompts for username input
-# detects current time zone, asks user to verify if accurate
-# asks what current availability is weekly, including what days of week and hours of the day they ARE available, hours of the day they ARE NOT available, maybe store in a hash?
+# on start of program, greets and prompts for username input - done
+# detects current time zone, asks user to verify if accurate - done
+# asks what current availability is weekly, including what days of week and hours of the day they ARE available, hours of the day they ARE NOT available, maybe store in a hash? - done
 # ask what other time zone you want to schedule with
 # display availability in the other time zone
 
